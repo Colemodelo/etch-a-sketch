@@ -1,0 +1,59 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: yellow;
+}
+#container {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 600px;
+    height: 500px;
+    background: white;
+    border: 4px solid black;
+    box-shadow: 4px 4px;
+}
+h1 {
+    margin: 10px;
+    padding: 7px;
+    border: 4px solid black;
+    box-shadow: 4px 4px;
+}
+#controlPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 99%;
+}
+.shaders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px;
+    border: 4px solid black;
+    box-shadow: 4px 4px;
+}
+#grid {
+    display: grid;
+    border: 2px solid black;
+    max-width: 325px;
+    height: 325px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-items {
+    border: 1px solid black;
+}
